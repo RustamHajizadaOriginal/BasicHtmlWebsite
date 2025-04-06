@@ -3,49 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO Tags as usual! -->
+    <meta name="description" content="Basic HTML Website Solutions" />
+    <meta
+      name="keywords"
+      content="frontEndDev, fornt end, front-end, frontend developer, web developer, portfolio, Rustam Hajizada, javascript, html"
+    />
+    <meta name="author" content="Rustam Hajizada" />
+    <!-- Titel of the page -->
     <title>Basic HTML Website</title>
-    <style>
-      .nav-header {
-        display: flex;
-        align-items: center; /* Align items vertically center */
-      }
-
-      .nav-header ul {
-        display: flex;
-        text-align: right;
-        list-style: none;
-        padding: 0;
-        padding-left: 12vw;
-      }
-
-      .nav-header ul li a {
-        margin: 0.3vw;
-        text-decoration: none;
-      }
-
-      .checkbox {
-        margin: 0 2vw 0 2vw;
-      }
-
-      body {
-        border: 0.5vw solid black;
-        margin: 2vw;
-        padding: 2vw;
-      }
-
-      header h1,
-      header p {
-        text-align: center;
-      }
-      header h1 {
-        font-size: xx-large;
-        font-family: cursive;
-      }
-    </style>
+    <style></style>
   </head>
   <body>
+    <!-- Header -->
     <header>
-      <nav class="nav-header">
+      <!-- NavBar -->
+      <nav>
         <h2><input type="checkbox" class="checkbox" />Rustam Hajizada</h2>
         <ul>
           <li>
@@ -65,11 +38,14 @@
           </li>
         </ul>
       </nav>
+      <!-- MainHeader -->
       <h1>Frontend Developer</h1>
       <p>html only with proper layout, no styling</p>
     </header>
+    <!-- Main Content -->
     <main>
-      <section class="section1">
+      <!-- Projects -->
+      <section>
         <h3>Project</h3>
         <ul>
           <li>HTML Only Portfolio</li>
@@ -79,7 +55,8 @@
           <li>Product Upcoming Page</li>
         </ul>
       </section>
-      <section class="section2">
+      <!-- Work Experience -->
+      <section>
         <h3>Work Experience</h3>
         <div>
           <div>
@@ -102,7 +79,8 @@
           </div>
         </div>
       </section>
-      <section class="section3">
+      <!-- Education -->
+      <section>
         <h3>Eduction</h3>
         <h4>
           Undergraduate in Computer Science, studies included the following:
@@ -121,9 +99,11 @@
         </ul>
       </section>
     </main>
+    <!-- Footer -->
     <footer>
       <h3>Review from my Coworkers</h3>
-      <div class="review">
+      <div>
+        <!-- Review 1 -->
         <section>
           <h4>
             Rustam Hajizada was a brilliant student; always stood out with his
@@ -131,6 +111,7 @@
           </h4>
           <p>Janne Doe <br />Assistant Professon</p>
         </section>
+        <!-- Review 2 -->
         <section>
           <h4>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum,
@@ -138,6 +119,7 @@
           </h4>
           <p>Mike Hans <br />Assistant Professon</p>
         </section>
+        <!-- Review 3 -->
         <section>
           <h4>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
@@ -146,6 +128,7 @@
           <p>Donald Brown <br />Assistant Professon</p>
         </section>
       </div>
+      <!-- Copyright -->
       <p>© all right reserved 2025</p>
     </footer>
   </body>
