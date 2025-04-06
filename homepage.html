@@ -4,46 +4,149 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basic HTML Website</title>
-  </head>
-  <body style="border: 2px solid black">
-    <header>
-      <h2 style="text-align: left">Rustam Hajizada</h2>
-      <ul>
-        <li><a style="text-decoration: none" href="homepage.html">Home</a></li>
-        <li>
-          <a style="text-decoration: none" href="projects.html">Projects</a>
-        </li>
-        <li>
-          <a style="text-decoration: none" href="articles.html">Articles</a>
-        </li>
-        <li>
-          <a style="text-decoration: none" href="contact.html">Contact</a>
-        </li>
-      </ul>
-      <h1 style="text-align: center">Frontend Developer</h1>
-      <p style="text-align: center">html only with proper layout, no styling</p>
-    </header>
-    <main
-      style="
-        border: 2px solid black;
+    <style>
+      .nav-header {
         display: flex;
-        justify-content: space-between;
-      "
-    >
-      <section style="border-right: 2px solid black">
-        <h1>Project</h1>
+        align-items: center; /* Align items vertically center */
+      }
+
+      .nav-header ul {
+        display: flex;
+        text-align: right;
+        list-style: none;
+        padding: 0;
+        padding-left: 12vw;
+      }
+
+      .nav-header ul li a {
+        margin: 0.3vw;
+        text-decoration: none;
+      }
+
+      .checkbox {
+        margin: 0 2vw 0 2vw;
+      }
+
+      body {
+        border: 0.5vw solid black;
+        margin: 2vw;
+        padding: 2vw;
+      }
+
+      header h1,
+      header p {
+        text-align: center;
+      }
+      header h1 {
+        font-size: xx-large;
+        font-family: cursive;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-header">
+        <h2><input type="checkbox" class="checkbox" />Rustam Hajizada</h2>
         <ul>
-          <li>HTML ONLy Portfolio</li>
-          <li>HTML ONLy Portfolio</li>
-          <li>HTML ONLy Portfolio</li>
+          <li>
+            <a href="homepage.html">Home</a>
+          </li>
+          <li>/</li>
+          <li>
+            <a href="projects.html">Projects</a>
+          </li>
+          <li>/</li>
+          <li>
+            <a href="articles.html">Articles</a>
+          </li>
+          <li>/</li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <h1>Frontend Developer</h1>
+      <p>html only with proper layout, no styling</p>
+    </header>
+    <main>
+      <section class="section1">
+        <h3>Project</h3>
+        <ul>
+          <li>HTML Only Portfolio</li>
+          <li>Calculator</li>
+          <li>Quize App</li>
+          <li>Countdown Time</li>
+          <li>Product Upcoming Page</li>
         </ul>
       </section>
-      <section style="border-right: 2px solid black">
-        <h1 style="text-align: center">Work Experience</h1>
+      <section class="section2">
+        <h3>Work Experience</h3>
+        <div>
+          <div>
+            <h3>Work Experience</h3>
+            <h5>roadmap.sh</h5>
+            <p>Solved all the frontend projects</p>
+            <a href="https://rustamhajizadasinglepagecvhtml.vercel.app/"
+              >Visit my Profile</a
+            >
+          </div>
+          <div>
+            <h5>OpenSource Work</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+              impedit. Nulla, voluptatum.
+            </p>
+            <a href="https://github.com/RustamHajizadaOriginal"
+              >Visit my GitHub Profile</a
+            >
+          </div>
+        </div>
       </section>
-      <section>
-        <h1>Eduction</h1>
+      <section class="section3">
+        <h3>Eduction</h3>
+        <h4>
+          Undergraduate in Computer Science, studies included the following:
+        </h4>
+        <h4>Course I took:</h4>
+        <ul>
+          <li>Object Oriented Programming</li>
+          <li>Data Structures and Algorithms</li>
+          <li>Web Engineering</li>
+          <li>Artificial Intelligence</li>
+          <li>Human-Computer Interaction</li>
+          <li>Computer Graphics</li>
+          <li>Database Management Systems</li>
+          <li>Distributed Database Systems</li>
+          <li>Discrete Mathematics</li>
+        </ul>
       </section>
     </main>
+    <footer>
+      <h3>Review from my Coworkers</h3>
+      <div class="review">
+        <section>
+          <h4>
+            Rustam Hajizada was a brilliant student; always stood out with his
+            assignments.
+          </h4>
+          <p>Janne Doe <br />Assistant Professon</p>
+        </section>
+        <section>
+          <h4>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum,
+            neque quisquam!
+          </h4>
+          <p>Mike Hans <br />Assistant Professon</p>
+        </section>
+        <section>
+          <h4>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+            dolorem eum.
+          </h4>
+          <p>Donald Brown <br />Assistant Professon</p>
+        </section>
+      </div>
+      <p>© all right reserved 2025</p>
+    </footer>
   </body>
 </html>
